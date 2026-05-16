@@ -3,6 +3,7 @@ import Footer from "@/src/components/layout/Footer";
 import MobileBottomNav from "@/src/components/layout/MobileBottomNav";
 import HeroSection from "../components/home/HeroSection";
 import GramDashboard from "../components/home/GramDashboardCard";
+import FarmerServices from "../components/home/FarmerServices";
 
 
 export default function HomePage() {
@@ -15,9 +16,9 @@ export default function HomePage() {
 
       <GramDashboard />
 
-      {/* <FarmerServices />
+       <FarmerServices/>
 
-      <DigitalIdentity />
+      {/* <DigitalIdentity />
 
       <PanchayatTransparency />
 
