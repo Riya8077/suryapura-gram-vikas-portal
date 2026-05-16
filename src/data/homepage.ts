@@ -82,3 +82,31 @@ export const dashboardCards = [
     progress: 90,
   },
 ];
+
+// farmer card data 
+export const farmerServices = [
+  {
+    title: "फसल सलाह",
+    description:
+      "विशेषज्ञों से खेती और फसल उत्पादन की जानकारी प्राप्त करें।",
+    image: "/images/banners/farmer-1.png",
+  },
+  {
+    title: "मौसम जानकारी",
+    description:
+      "आज का मौसम, वर्षा और तापमान अपडेट देखें।",
+    image: "/images/banners/farmer-2.jpg",
+  },
+  {
+    title: "सरकारी योजनाएं",
+    description:
+      "किसानों के लिए उपलब्ध सभी सरकारी योजनाओं की जानकारी।",
+    image: "/images/banners/farmer-3.jpg",
+  },
+  {
+    title: "बीज और खाद सहायता",
+    description:
+      "उन्नत बीज और खाद वितरण सेवाओं का लाभ उठाएं।",
+    image: "/images/banners/farmer-4.jpg",
+  },
+];
