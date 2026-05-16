@@ -2,6 +2,7 @@ import Navbar from "@/src/components/layout/Navbar";
 import Footer from "@/src/components/layout/Footer";
 import MobileBottomNav from "@/src/components/layout/MobileBottomNav";
 import HeroSection from "../components/home/HeroSection";
+import GramDashboard from "../components/home/GramDashboardCard";
 
 
 export default function HomePage() {
@@ -12,9 +13,9 @@ export default function HomePage() {
 
        <HeroSection />
 
-     {/* <GramDashboard />
+      <GramDashboard />
 
-      <FarmerServices />
+      {/* <FarmerServices />
 
       <DigitalIdentity />
 

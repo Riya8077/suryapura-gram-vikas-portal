@@ -1,3 +1,4 @@
+// hero section 
 export const heroSlides = [
   {
     id: 1,
@@ -31,5 +32,53 @@ export const heroSlides = [
     image: "/images/hero/slider2.png",
     ctaPrimary: "विकास कार्य देखें",
     ctaSecondary: "शिकायत दर्ज करें",
+  },
+];
+// dashboard card
+import {
+  BookOpen,
+  Droplets,
+  HeartPulse,
+  Landmark,
+  Tractor,
+  Waypoints,
+} from "lucide-react";
+
+export const dashboardCards = [
+  {
+    title: "सड़क निर्माण",
+    description: "12 कार्य प्रगति पर",
+    icon: Waypoints,
+    progress: 72,
+  },
+  {
+    title: "शिक्षा केंद्र",
+    description: "8 केंद्र संचालित",
+    icon: BookOpen,
+    progress: 84,
+  },
+  {
+    title: "किसान सहायता",
+    description: "450+ किसान जुड़े",
+    icon: Tractor,
+    progress: 68,
+  },
+  {
+    title: "जल योजना",
+    description: "5 योजनाएं चालू",
+    icon: Droplets,
+    progress: 58,
+  },
+  {
+    title: "स्वास्थ्य शिविर",
+    description: "3 शिविर इस माह",
+    icon: HeartPulse,
+    progress: 76,
+  },
+  {
+    title: "पंचायत सेवाएं",
+    description: "25+ सेवाएं उपलब्ध",
+    icon: Landmark,
+    progress: 90,
   },
 ];
