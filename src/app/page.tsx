@@ -1,6 +1,7 @@
 import Navbar from "@/src/components/layout/Navbar";
 import Footer from "@/src/components/layout/Footer";
 import MobileBottomNav from "@/src/components/layout/MobileBottomNav";
+import HeroSection from "../components/home/HeroSection";
 
 
 export default function HomePage() {
@@ -9,6 +10,17 @@ export default function HomePage() {
       
       <Navbar />
 
+       <HeroSection />
+
+     {/* <GramDashboard />
+
+      <FarmerServices />
+
+      <DigitalIdentity />
+
+      <PanchayatTransparency />
+
+      <ImpactSection /> */}
 
       <Footer />
 
