@@ -1,4 +1,4 @@
-// hero section 
+// hero section
 export const heroSlides = [
   {
     id: 1,
@@ -83,30 +83,91 @@ export const dashboardCards = [
   },
 ];
 
-// farmer card data 
+// farmer card data
 export const farmerServices = [
   {
     title: "फसल सलाह",
-    description:
-      "विशेषज्ञों से खेती और फसल उत्पादन की जानकारी प्राप्त करें।",
+    description: "विशेषज्ञों से खेती और फसल उत्पादन की जानकारी प्राप्त करें।",
     image: "/images/banners/farmer-1.png",
   },
   {
     title: "मौसम जानकारी",
-    description:
-      "आज का मौसम, वर्षा और तापमान अपडेट देखें।",
+    description: "आज का मौसम, वर्षा और तापमान अपडेट देखें।",
     image: "/images/banners/farmer-2.jpg",
   },
   {
     title: "सरकारी योजनाएं",
-    description:
-      "किसानों के लिए उपलब्ध सभी सरकारी योजनाओं की जानकारी।",
+    description: "किसानों के लिए उपलब्ध सभी सरकारी योजनाओं की जानकारी।",
     image: "/images/banners/farmer-3.jpg",
   },
   {
     title: "बीज और खाद सहायता",
-    description:
-      "उन्नत बीज और खाद वितरण सेवाओं का लाभ उठाएं।",
+    description: "उन्नत बीज और खाद वितरण सेवाओं का लाभ उठाएं।",
     image: "/images/banners/farmer-4.jpg",
   },
+];
+
+// transparency data
+export const transparencyData = [
+  {
+    title: "सड़क निर्माण",
+    budget: "₹18 लाख",
+    progress: 78,
+  },
+  {
+    title: "जल योजना",
+    budget: "₹12 लाख",
+    progress: 62,
+  },
+  {
+    title: "विद्यालय सुधार",
+    budget: "₹9 लाख",
+    progress: 84,
+  },
+  {
+    title: "स्वास्थ्य केंद्र",
+    budget: "₹6 लाख",
+    progress: 55,
+  },
+];
+
+export const grievanceStats = [
+  {
+    label: "कुल शिकायतें",
+    value: "248",
+  },
+  {
+    label: "सुलझाई गई",
+    value: "201",
+  },
+  {
+    label: "लंबित",
+    value: "47",
+  },
+];
+// impact session 
+export const impactStats = [
+  {
+    value: "12K+",
+    label: "पंजीकृत नागरिक",
+  },
+  {
+    value: "450+",
+    label: "किसान जुड़े",
+  },
+  {
+    value: "96%",
+    label: "सेवा संतुष्टि",
+  },
+  {
+    value: "32",
+    label: "विकास परियोजनाएं",
+  },
+];
+
+export const impactHighlights = [
+  "सभी पंचायत सेवाएं अब डिजिटल",
+  "गांव के विकास कार्यों की लाइव ट्रैकिंग",
+  "किसानों के लिए स्मार्ट सहायता केंद्र",
+  "योजना पात्रता और शिकायत प्रणाली",
 ];
