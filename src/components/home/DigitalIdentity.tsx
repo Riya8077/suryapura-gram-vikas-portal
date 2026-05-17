@@ -171,7 +171,7 @@ export default function DigitalIdentity() {
                   
                   <div className="relative h-28 w-28 overflow-hidden border border-gray-300 bg-white">
                     <Image
-                      src="/images/village/qr.png"
+                      src="/images/social-posts/qr.png"
                       alt="QR"
                       fill
                       className="object-contain p-2"
