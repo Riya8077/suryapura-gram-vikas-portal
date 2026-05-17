@@ -4,6 +4,7 @@ import MobileBottomNav from "@/src/components/layout/MobileBottomNav";
 import HeroSection from "../components/home/HeroSection";
 import GramDashboard from "../components/home/GramDashboardCard";
 import FarmerServices from "../components/home/FarmerServices";
+import DigitalIdentity from "../components/home/DigitalIdentity";
 
 
 export default function HomePage() {
@@ -18,9 +19,9 @@ export default function HomePage() {
 
        <FarmerServices/>
 
-      {/* <DigitalIdentity />
+       <DigitalIdentity />
 
-      <PanchayatTransparency />
+      {/* <PanchayatTransparency />
 
       <ImpactSection /> */}
 
