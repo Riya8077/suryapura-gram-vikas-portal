@@ -153,7 +153,7 @@ export default function DigitalIdentity() {
                     <img
                       src="/images/qr-code.png"
                       alt="QR Code"
-                      className="w-28 h-28"
+                      className="h-28 w-28 object-contain"
                     />
                   </div>
 
