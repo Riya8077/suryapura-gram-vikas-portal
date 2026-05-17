@@ -12,6 +12,7 @@ import {
 } from "@/src/data/homepage";
 
 export default function ImpactSection() {
+  const language = "hindi";
   return (
     <section className="relative overflow-hidden bg-green-950 py-16 text-white md:py-24">
       
@@ -53,7 +54,7 @@ export default function ImpactSection() {
             <div className="mt-8 space-y-4">
               {impactHighlights.map((item) => (
                 <div
-                  key={item}
+                  key={item.hi}
                   className="flex items-start gap-3"
                 >
                   <CheckCircle2
@@ -62,7 +63,7 @@ export default function ImpactSection() {
                   />
 
                   <p className="text-white/85">
-                    {item}
+                    {language === "hindi" ? item.hi : item.en}
                   </p>
                 </div>
               ))}

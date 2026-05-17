@@ -138,7 +138,7 @@ export default function DigitalIdentity() {
                   
                   <div className="relative h-24 w-24 overflow-hidden border border-gray-200">
                     <Image
-                      src="/images/village/profile.jpg"
+                      src="/images/banners/profile.png"
                       alt="Citizen"
                       fill
                       className="object-cover"
