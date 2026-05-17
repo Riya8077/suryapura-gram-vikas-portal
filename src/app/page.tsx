@@ -5,6 +5,8 @@ import HeroSection from "../components/home/HeroSection";
 import GramDashboard from "../components/home/GramDashboardCard";
 import FarmerServices from "../components/home/FarmerServices";
 import DigitalIdentity from "../components/home/DigitalIdentity";
+import PanchayatTransparency from "../components/home/PanchayatTransparency";
+import ImpactSection from "../components/home/ImpactSection";
 
 
 export default function HomePage() {
@@ -21,9 +23,9 @@ export default function HomePage() {
 
        <DigitalIdentity />
 
-      {/* <PanchayatTransparency />
+      <PanchayatTransparency />
 
-      <ImpactSection /> */}
+      <ImpactSection />
 
       <Footer />
 
