@@ -54,11 +54,9 @@ export default function DigitalIdentity() {
     <section className="bg-[#fafcf8] py-16 md:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-          
           {/* LEFT */}
           <div>
             <div className="flex items-center gap-3">
-              
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-green-100">
                 <BadgeCheck className="text-green-700" size={24} />
               </div>
@@ -86,14 +84,10 @@ export default function DigitalIdentity() {
                     }`}
                   >
                     <div className="flex items-start gap-4">
-                      
                       <div
                         className={`flex h-11 w-11 items-center justify-center ${service.bg}`}
                       >
-                        <Icon
-                          className={service.color}
-                          size={22}
-                        />
+                        <Icon className={service.color} size={22} />
                       </div>
 
                       <div>
@@ -114,28 +108,21 @@ export default function DigitalIdentity() {
 
           {/* RIGHT */}
           <div className="border border-green-100 bg-[#f7faf5] p-5 shadow-sm md:p-7">
-            
             <div className="flex items-center justify-between">
-              
               <h3 className="text-2xl font-black text-green-700">
                 डिजिटल ग्राम पहचान पत्र
               </h3>
 
               <div className="flex items-center gap-2 text-green-600">
                 <BadgeCheck size={18} />
-                <span className="text-sm font-semibold">
-                  सत्यापित
-                </span>
+                <span className="text-sm font-semibold">सत्यापित</span>
               </div>
             </div>
 
             <div className="mt-6 border border-gray-200 bg-white p-5 shadow-sm">
-              
               <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-                
                 {/* LEFT INFO */}
                 <div className="flex gap-4">
-                  
                   <div className="relative h-24 w-24 overflow-hidden border border-gray-200">
                     <Image
                       src="/images/banners/profile.png"
@@ -151,36 +138,26 @@ export default function DigitalIdentity() {
                     </h4>
 
                     <div className="mt-3 space-y-2 text-sm text-gray-700">
-                      <p>
-                        पुत्र: रामस्वरूप प्रसाद
-                      </p>
+                      <p>पुत्र: रामस्वरूप प्रसाद</p>
 
-                      <p>
-                        ग्राम: सूर्यपुरा, जिला: सीतामढ़ी
-                      </p>
+                      <p>ग्राम: सूर्यपुरा, जिला: सीतामढ़ी</p>
 
-                      <p className="font-semibold">
-                        परिवार ID: SURY123456
-                      </p>
+                      <p className="font-semibold">परिवार ID: SURY123456</p>
                     </div>
                   </div>
                 </div>
 
                 {/* QR */}
                 <div className="flex flex-col items-center">
-                  
                   <div className="relative h-28 w-28 overflow-hidden border border-gray-300 bg-white">
-                    <Image
-                      src="/images/social-posts/qr-code.png"
-                      alt="QR"
-                      fill
-                      className="object-contain p-2"
+                    <img
+                      src="/images/qr-code.png"
+                      alt="QR Code"
+                      className="w-28 h-28"
                     />
                   </div>
 
-                  <p className="mt-3 font-bold text-green-700">
-                    सक्रिय
-                  </p>
+                  <p className="mt-3 font-bold text-green-700">सक्रिय</p>
                 </div>
               </div>
             </div>
