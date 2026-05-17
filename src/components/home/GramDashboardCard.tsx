@@ -1,6 +1,7 @@
 import DashboardCard from "@/src/components/cards/DashboardCard";
 import Container from "@/src/components/shared/Container";
 import SectionHeader from "@/src/components/shared/SectionHeader";
+
 import { dashboardCards } from "@/src/data/homepage";
 
 export default function GramDashboard() {
@@ -13,12 +14,26 @@ export default function GramDashboard() {
             subtitle="हमारे गांव के विकास कार्यों और जरूरी सेवाओं की जानकारी एक साफ और सरल रूप में।"
           />
 
-          <button className="w-fit border border-green-200 bg-white px-5 py-3 text-sm font-semibold text-green-800 transition hover:bg-green-50">
+          <button
+            className="
+              w-fit
+              border
+              border-green-200
+              bg-white
+              px-5
+              py-3
+              text-sm
+              font-semibold
+              text-green-800
+              transition
+              hover:bg-green-50
+            "
+          >
             सभी देखें →
           </button>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
           {dashboardCards.map((card) => (
             <DashboardCard
               key={card.title}

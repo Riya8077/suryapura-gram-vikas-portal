@@ -9,6 +9,7 @@ import { heroSlides } from "@/src/data/homepage";
 
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const activeSlide = heroSlides[activeIndex];
 
   const nextSlide = () => {
@@ -16,11 +17,14 @@ export default function HeroSection() {
   };
 
   const prevSlide = () => {
-    setActiveIndex((prev) => (prev === 0 ? heroSlides.length - 1 : prev - 1));
+    setActiveIndex((prev) =>
+      prev === 0 ? heroSlides.length - 1 : prev - 1
+    );
   };
 
   useEffect(() => {
     const timer = setInterval(nextSlide, 5000);
+
     return () => clearInterval(timer);
   }, []);
 
@@ -29,6 +33,7 @@ export default function HeroSection() {
       <div className="relative min-h-[78vh] w-full overflow-hidden sm:min-h-[82vh] lg:min-h-[86vh]">
         <AnimatePresence mode="wait">
           <motion.div
+            key={activeSlide.id}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -36,6 +41,7 @@ export default function HeroSection() {
               duration: 1.2,
               ease: "easeInOut",
             }}
+            className="absolute inset-0"
           >
             <Image
               src={activeSlide.image}
@@ -54,15 +60,16 @@ export default function HeroSection() {
         <div className="relative z-10 mx-auto grid min-h-[78vh] max-w-7xl items-center gap-10 px-4 py-12 sm:min-h-[82vh] sm:px-6 lg:min-h-[86vh] lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
           <AnimatePresence mode="wait">
             <motion.div
-              key={activeSlide.id + "-content"}
+              key={`${activeSlide.id}-content`}
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.6 }}
               className="max-w-2xl"
             >
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-white backdrop-blur">
                 <Sparkles size={17} className="text-yellow-300" />
+
                 <span className="text-xs font-medium sm:text-sm">
                   {activeSlide.badge}
                 </span>
@@ -115,8 +122,9 @@ export default function HeroSection() {
                     className="flex items-center justify-between bg-white/10 px-4 py-3"
                   >
                     <span className="text-sm">{item}</span>
+
                     <span className="bg-green-400/20 px-3 py-1 text-xs text-green-100">
-                      Active
+                      सक्रिय
                     </span>
                   </div>
                 ))}
@@ -127,6 +135,7 @@ export default function HeroSection() {
 
         <button
           onClick={prevSlide}
+          aria-label="Previous slide"
           className="absolute left-4 top-1/2 z-20 hidden -translate-y-1/2 bg-white/20 p-3 text-white backdrop-blur transition hover:bg-white/30 md:block"
         >
           <ChevronLeft size={22} />
@@ -134,6 +143,7 @@ export default function HeroSection() {
 
         <button
           onClick={nextSlide}
+          aria-label="Next slide"
           className="absolute right-4 top-1/2 z-20 hidden -translate-y-1/2 bg-white/20 p-3 text-white backdrop-blur transition hover:bg-white/30 md:block"
         >
           <ChevronRight size={22} />
@@ -144,6 +154,7 @@ export default function HeroSection() {
             <button
               key={slide.id}
               onClick={() => setActiveIndex(index)}
+              aria-label={`Go to slide ${index + 1}`}
               className={`h-2.5 transition-all ${
                 activeIndex === index ? "w-8 bg-white" : "w-2.5 bg-white/40"
               }`}
